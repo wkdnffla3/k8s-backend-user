@@ -17,3 +17,6 @@ spring:
     show-sql: true
     open-in-view: false
 
+  kafka:
+    bootstrap-servers: 192.168.55.191:9092
+
