@@ -10,11 +10,11 @@ import lombok.Setter;
 @Setter
 public class SiteUserRegisterDto {
     @NotBlank(message = "아이디를 입력하세요.")
-    private String userId;
-    @NotBlank(message = "비밀번호를 입력하세요.")
     private String password;
     @NotBlank(message = "전화번호를 입력하세요.")
     private String phoneNumber;
+    private String userId;
+    @NotBlank(message = "비밀번호를 입력하세요.")
     public SiteUser toEntity() {
         SiteUser siteUser = new SiteUser();
         siteUser.setUserId(this.userId);
