@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: k8s-backend-user
-        image: wkdnffla3/k8s-backend-user:0.0.5
+        image: wkdnffla3/k8s-backend-user:0.0.6
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
